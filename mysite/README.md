@@ -38,7 +38,7 @@ folder
 empty means literally the webpage, in that case, 'localhost/polls'. Notice that '/polls' is linked
 by a path in 'mysite/urls.py' which load the URL's patterns of folder polls
 
-views.index = Function index inside views files
+                                        // views.index = Function index inside views files
 
-name = It's a shortcut name to make it easier to find the route instead of type it all the way down.
-
+                                        // name = It's a shortcut name to make it easier to find the
+                                        route instead of type it all the way down.
