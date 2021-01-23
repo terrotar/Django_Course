@@ -23,13 +23,16 @@ project directory
 
     CONCEPTS
 
-* `project VS app` // Apps are similar to a webpage, cellphone app, etc. Projects are the folders
+* `project VS app`
+    // Apps are similar to a webpage, cellphone app, etc. Projects are the folders
 that contains apps
 
-* `'polls/views.py'` // Folder that contains the code that will run when the app is requested, for
+* `'polls/views.py'`
+    // Folder that contains the code that will run when the app is requested, for
 example a simple text message
 
-* `mysite/urls.py VS polls/urls.py` // The first is your primary pack of URL patterns. It contains
+* `mysite/urls.py VS polls/urls.py`
+    // The first is your primary pack of URL patterns. It contains
 URL's like admin and polls. Note that inside 'mysite/urls.py' contains a path that connect 'polls/'
 to the URL's patterns that are inside 'polls/urls.py'. In other words, it's like a link to another
 folder
