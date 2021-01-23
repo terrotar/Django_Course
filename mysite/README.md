@@ -17,7 +17,8 @@ project directory
 
 * `python manage.py runserver` // Start the development enviroment in a browser
 
-* ``
+* `python manage.py migrate` // Creates a database(default=SQLite) in the file 'db.sqlite3'. You can
+modify the tables, columns and realationship in the file 'polls/models.py'.
 
 *************************************************************************************************
 
