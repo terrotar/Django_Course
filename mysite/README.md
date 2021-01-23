@@ -34,9 +34,11 @@ URL's like admin and polls. Note that inside 'mysite/urls.py' contains a path th
 to the URL's patterns that are inside 'polls/urls.py'. In other words, it's like a link to another
 folder
 
-* `path('', views.index, name='index')` // '' = The route text, for example 'user/home'. When it's
-empty means literally the webpage, in that case, 'localhost/polls'. Notice that '/polls' is linked
-by a path in 'mysite/urls.py' which load the URL's patterns of folder polls
+* `path('', views.index, name='index')` 
+
+                                        // '' = The route text, for example 'user/home'. When it's
+                                        empty means literally the webpage, in that case, 'localhost/polls'. Notice that '/polls' is linked
+                                        by a path in 'mysite/urls.py' which load the URL's patterns of folder polls
 
                                         // views.index = Function index inside views files
 
