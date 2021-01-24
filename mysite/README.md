@@ -66,3 +66,5 @@ and control of database versions.
 * `Configuration of INSTALLED_APPS in file 'mysite/settings.py'` // Imagine that you downloaded a program but
 you didn't install it. If you create a database schema for example, you need to "load" that app. For that, you need
 to include 'polls.apps.PollsConfig' in the list.
+
+* `Change timezone` // Just put your local file in timezone pattern of 'mysite/settings.py', for example 'America/Sao_Paulo'.
