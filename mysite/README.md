@@ -1,9 +1,6 @@
 
 *************************************************************************************************
 
-    Hey, that's my first project with Django and conda. Trying to get some knowledge and
-basic concepts focused in web development.
-
     Here you will found my personal summary of some tips and hints that I think
 it's interesting for a fast checkout if necessary.
 
