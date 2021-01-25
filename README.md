@@ -1,7 +1,7 @@
 
 *************************************************************************************************
 
-    Here you will found my personal summary of some tips and hints that I think it's interesting for a fast checkout if necessary.
+Here you will found my personal summary of some tips and hints that I think it's interesting for a fast checkout if necessary.
 
 *************************************************************************************************
 
