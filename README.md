@@ -64,3 +64,11 @@ you didn't install it. If you create a database schema for example, you need to 
 to include 'polls.apps.PollsConfig' in the list.
 
 * `Change timezone` // Just put your local file in timezone pattern of 'mysite/settings.py', for example 'America/Sao_Paulo'.
+
+* `About 'polls/views.py'` // All that Django accept as return is a 'return HttpResponse()' or raise an exception for an error,
+like 404. With the first option, you can do pratically anything, link a PDF, or a template.
+
+* `How Django search files/pastes` // Now we might be able to get away with putting our templates directly in polls/templates (rather than creating another polls subdirectory), but it would actually be a bad idea. Django will choose the first template it finds whose name matches, and if you had a template with the same name in a different application, Django would be unable to distinguish between them. We need to be able to point Django at the right one, and the best way to ensure this is by namespacing them. That is, by putting those templates inside another directory named for the application itself.
+
+* `Namespacing URL names` // In Django, it's normal to have some app's, and some of them has a name of a path(for example, name=detail, or name=index) that it's the same of another app, like index of the website and index of an android app. To solve that problem, you can
+first of all create an APP_NAME in your URL_PATTERN. Doing so, you will be able to summon the path in your templates like the follow example: <a href="{% url 'polls:index' %}"></a>
