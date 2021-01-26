@@ -72,3 +72,5 @@ like 404. With the first option, you can do pratically anything, link a PDF, or 
 
 * `Namespacing URL names` // In Django, it's normal to have some app's, and some of them has a name of a path(for example, name=detail, or name=index) that it's the same of another app, like index of the website and index of an android app. To solve that problem, you can
 first of all create an APP_NAME in your URL_PATTERN. Doing so, you will be able to summon the path in your templates like the follow example: <a href="{% url 'polls:index' %}"></a>
+
+* `csrf_token in templates` // In any template that uses a POST form, use the csrf_token tag inside the <form> element if the form is for an internal URL. That's a safe and simple way to prevent CSRF(Cross Site Request Forgeries) attacks.
