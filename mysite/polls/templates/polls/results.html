@@ -3,7 +3,9 @@
 <ul>
   {% for choice in question.choice_set.all %}
   <li>
-    {{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize}}
+    {{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}
+    <!-- vote{{ choice.votes|pluralize means that if there are more then 1 vote
+    it will displlay in the plural(votes, for example) -->
   </li>
   {% endfor %}
 </ul>

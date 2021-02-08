@@ -15,6 +15,8 @@ class IndexView(generic.ListView):
         """Return the last five published questions(not including
         those to set to be published in the future)."""
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
+        # The argument 'pub_date__lte' == less then or equal(<=), that is,
+        # all past posts, or recent posts
 
 
 class DetailView(generic.DetailView):
@@ -37,11 +39,13 @@ class ResultsView(generic.DetailView):
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
+        # Here is the choice selected after submit, not the displayed !!!
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except(KeyError, Choice.DoesNotExist):
-        return render(request, 'polls/detail.html', {'question': question,
-                                                     'error_message': "You didn't select a choice.",
-                                                     })
+        return render(request, 'polls/detail.html',
+                      {'question': question,
+                       'error_message': "You didn't select a choice.",
+                       })
     else:
         selected_choice.votes += 1
         selected_choice.save()
