@@ -21,6 +21,9 @@ class Question(models.Model):
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    # Search for params related_name="choices"....
+    # Instead of question.choice_set.all() you could use now
+    # question.choices() with the same results
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
 
